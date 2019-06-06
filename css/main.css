@@ -1,0 +1,15 @@
+#main {
+	width: 500px;
+}
+
+#main div {
+	display: inline-block;
+}
+
+#genre div {
+	display: block;
+}
+
+#films div {
+	display: block;
+}
