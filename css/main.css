@@ -1,15 +1,81 @@
-#main {
-	width: 500px;
+* {
+	padding: 0;
+	margin: 0;
 }
 
-#main div {
+body {
+	background:linear-gradient(
+  		rgba(30,27,38, 0.90), 
+  		rgba(30,27,38, 0.90)),
+		url('../img/background.jpg');
+	background-size: cover;
+	color: #e7e7e7;
+}
+
+header {
+	text-align: center;
+	padding: 1em;
+}
+
+main {
+	width: 100%;
+	text-align: center;
+	font-size: 21pt;
+}
+
+.resume {
+	margin: auto;
+	padding: 1em;
+}
+.resume > div {
 	display: inline-block;
+	vertical-align: top;
 }
 
-#genre div {
-	display: block;
+.resume-img {
+	width: 20%;
+}
+.resume-img img {
+	border-radius: 5px;
 }
 
-#films div {
-	display: block;
+.resume-text {
+	width: 70%;
+	text-align: justify;
+}
+
+.responses > ul {
+	list-style: none;
+}
+.responses > ul > li {
+	position: relative;
+	width: 200px;
+	height: 300px;
+	display: inline-block;
+	border-radius: 5px;
+	background: white;
+	padding: 1em;
+	font-weight: bold;
+	transition: 1s;
+	margin: 10px;
+	background-position: center;
+	background-repeat: none;
+	vertical-align: top;
+	box-shadow:5px 5px 115px -14px black;
+}
+.responses > ul > li:hover {
+	background: grey;
+	transition: 1s;
+	cursor: pointer;
+}
+.movie-title {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: #1e1b26;
+	width: 100%;
+	border-radius: 0 0 5px 5px;
+	height: 66px;
+	overflow: hidden;
+	transition: 1s;
 }
