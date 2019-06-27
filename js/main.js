@@ -28,7 +28,7 @@ function start(movieId) {
 		let resumeImg = document.querySelector('#resume-img');
 		resumeImg.style.transition = '';
 		resumeImg.src = `https://image.tmdb.org/t/p/w200/${movieToFound.poster_path}`;
-		resumeImg.style.filter = 'blur(5rem)';
+		resumeImg.style.filter = 'blur(5rem) grayscale(100%)';
 		setTimeout(() => { resumeImg.style.transition = '1s' }, 500);
 		document.querySelector('#resume-text').innerHTML = movieToFound.overview;
 
