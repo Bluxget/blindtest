@@ -10,6 +10,7 @@ body {
 		url('../img/background.jpg');
 	background-size: cover;
 	color: #e7e7e7;
+	font-family: calibri;
 }
 
 header {
